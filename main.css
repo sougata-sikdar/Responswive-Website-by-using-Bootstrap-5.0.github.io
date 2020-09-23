@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.mainbodycolour
+{
+     background-image: linear-gradient(to left,#471e06, #484545 );
+     /* background-color: #484545; */
+}
+
+
+html {
+    font-size: 100%;
+  }
+  ::selection
+  {
+      background-color: orange;
+      color: white;
+  }
+.hey
+{
+  position: relative;
+}
+.hey1
+{
+  width: 70%;
+  height: 30px;
+  background-color: #fff;
+  margin-top: 0;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+  .carousel-inner img {
+    width: 100%;
+    height: 28rem;
+  }
+.jumboimg
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('https://lorempixel.com/800/400/food/1');
+  background-size: 100% 100%;
+}
+
+/* ///////////zoom image/////////////////// */
+ .zoommain
+    {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .zoommain figure
+    {
+      height: 30rem;
+      overflow: hidden;
+      position: relative;
+
+    }
+    .zoommain figcaption
+    {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    /*  background: rgba(0, 0, 0, 1); */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: all 1s linear;
+    }
+    .zoommain figure:hover figcaption
+    {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .zoommain figure img
+    {
+      height: 30rem;
+      transition: all 0.3s linear;
+
+    }
+    .zoommain figure:hover img
+    {
+      transform: scale(1.4);
+    }
+
+/*  */
+
+  /*# sourceMappingURL=main.css.map */
+  /*  @media (min-width : 1002px)
+  {
+    html {
+      font-size: 100%;
+    }
+  } */
+  @media (max-width : 1300px)
+  {
+    html {
+      font-size: 90%;
+    }
+
+     .zoommain figure
+    {
+      height: 23rem;
+      overflow: hidden;
+      position: relative;
+
+    }
+     .zoommain figure img
+    {
+      height: 25rem;
+      transition: all 0.3s linear;
+
+    }
+  }
+  @media (max-width : 900px)
+  {
+    html {
+      font-size: 86%;
+    }
+
+     .zoommain figure
+    {
+      height: 21rem;
+      overflow: hidden;
+      position: relative;
+
+    }
+     .zoommain figure img
+    {
+      height: 22rem;
+      transition: all 0.3s linear;
+
+    }
+  }
+  
+ @media (max-width : 700px)
+  {
+    html {
+      font-size: 80%;
+    }
+
+     .zoommain figure
+    {
+      height: 21rem;
+      overflow: hidden;
+      position: relative;
+
+    }
+     .zoommain figure img
+    {
+      height: 20rem;
+      transition: all 0.3s linear;
+
+    }
+  }
+
+  @media (max-width : 500px)
+  {
+    html {
+      font-size: 72%;
+    }
+
+     .zoommain figure
+    {
+      height: 20rem;
+      overflow: hidden;
+      position: relative;
+
+    }
+     .zoommain figure img
+    {
+      height: 22rem;
+      transition: all 0.3s linear;
+
+    }
+  }
